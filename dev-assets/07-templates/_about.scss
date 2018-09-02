@@ -1,0 +1,31 @@
+.t-about {
+    background-color: $white;
+    max-width: 1680px;
+    margin: 0 auto;
+    
+    &__box {
+        color: $violet;
+        font-size: $font-size-7;
+        padding: $grid-base * 3;
+        
+        @include medium-up {
+            padding-top: $grid-base * 1.3;
+            padding-bottom: $grid-base * 1.3;
+        }
+        
+        @include large-up {
+            padding-left: $grid-base * 13;
+            padding-right: $grid-base * 13;
+        }
+        
+    }
+    
+    &__text {
+        font-size: $font-size-7;
+        
+        @include medium-up {
+
+        }
+        
+    }
+} 

@@ -1,0 +1,10 @@
+.o-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    
+
+    @include large-up {
+        max-width: 1680px;
+    }
+}

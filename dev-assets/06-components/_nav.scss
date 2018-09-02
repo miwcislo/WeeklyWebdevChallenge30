@@ -1,0 +1,49 @@
+.c-nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @include medium-up {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__item {
+        color: $greyDark;
+        font-size: $font-size-8;
+        letter-spacing: 2px;
+        padding-bottom: $grid-base * 1.5;
+        padding-top: $grid-base * 1.5;
+        text-transform: uppercase;
+        width: 100%;
+        
+        &:hover {
+            color: $blue;
+        }
+
+        @include medium-up {
+            margin-left: $grid-base * 2.5;
+            margin-right: $grid-base * 2.5;
+            padding-bottom: 0;
+            padding-top: 0;
+            width: auto;
+        }
+
+        &--logo {
+            font-size: $font-size-5;
+            letter-spacing: 8px;
+            
+            &:hover {
+            color: $greyDark;
+            }
+
+            @include medium-up {
+                font-size: $font-size-3;
+                margin-left: $grid-base * 2.5;
+                margin-right: $grid-base * 2.5;
+            }
+
+        }
+    }
+}

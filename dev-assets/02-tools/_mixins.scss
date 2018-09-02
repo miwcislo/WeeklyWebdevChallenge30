@@ -1,0 +1,23 @@
+// Od malych ekranow w gore
+
+@mixin medium-up {
+  @media (min-width: #{$bp-small}) {
+    @content
+  }
+}
+
+// Od srednich ekranow w gore
+
+@mixin medium-up {
+  @media (min-width: #{$bp-medium}) {
+    @content
+  }
+}
+
+// Od duzych ekranow w gore
+
+@mixin large-up {
+  @media (min-width: #{$bp-large}) {
+    @content
+  }
+}

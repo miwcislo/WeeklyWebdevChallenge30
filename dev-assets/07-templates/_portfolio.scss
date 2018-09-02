@@ -1,0 +1,58 @@
+.t-portfolio {
+    max-width: 1680px;
+    margin: 0 auto;
+    
+    &__item {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        height: 420px;
+        
+        
+        &--1 {
+            background-image: url(../images/foto-1.png);
+        }
+        
+        &--2 {
+            background-image: url(../images/foto-2.png);
+        }
+        
+        &--3 {
+            background-image: url(../images/foto-3.png);
+        }
+        
+        &--4 {
+            background-image: url(../images/foto-4.png);
+        }
+        
+        &--5 {
+            background-image: url(../images/foto-5.png);
+        }
+        
+        &--6 {
+            background-image: url(../images/foto-6.png);
+        }
+    }
+    
+    &__mask {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: all .4s;
+        
+        &:hover {
+                background-color: rgba(0, 0, 0, 0.7);
+                opacity: 1;
+        }
+    }
+    
+    &__text {
+        color: $white;
+        font-size: $font-size-3;
+        font-weight: 300;
+    }
+    
+}

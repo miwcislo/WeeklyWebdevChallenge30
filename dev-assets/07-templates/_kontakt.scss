@@ -1,0 +1,43 @@
+.t-kontakt {
+    background-color: $greyMedium;
+    color: $white;
+
+    &__box {
+        padding: $grid-base * 3;
+        
+        @include medium-up {
+            padding-left: $grid-base * 5;
+            padding-top: $grid-base * 2;
+            padding-bottom: $grid-base * 2;
+        }
+        
+        @include large-up {
+            padding: $grid-base * 5;
+        }
+    }
+
+    &__heading {
+        margin-top: $grid-base;
+        font-weight: 700;
+        font-size: $font-size-6;
+        
+        @include large-up {
+            margin-top: $grid-base * 3;
+        }
+    }
+
+    &__text {
+        font-weight: 300;
+    }
+
+    &__image {
+
+        @include medium-up {
+            padding-right: $grid-base * 5;
+        }
+    }
+
+    &__map {
+        width: 100%;
+    }
+}

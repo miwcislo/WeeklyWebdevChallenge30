@@ -1,0 +1,48 @@
+.t-footer {
+    color: $greyMedium;
+    
+    &__icon-box {
+        display: flex;
+        justify-content: center;
+        padding: $grid-base * 3;
+        
+        @include medium-up {
+            justify-content: flex-start;
+            padding-left: $grid-base * 5;
+            padding-bottom: $grid-base * 3;
+            padding-top: $grid-base * 3;
+        }
+    }
+    
+    &__icon {
+        color: $greyMedium;
+        font-size: $font-size-3;
+        margin-right: $grid-base * 3;
+        transition: all .4s;
+        
+        &:hover {
+            color: $greyLight;
+        }
+        
+        &--last {
+            margin-right: 0;
+        }
+    }
+    
+    
+    &__text {
+        font-size: $font-size-5;
+        font-weight: 400;
+        padding: $grid-base * 3;
+        padding-top: 0;
+        text-align: center;
+        
+        @include medium-up {
+            font-size: $font-size-4;
+            padding-right: $grid-base * 5;
+            padding-bottom: $grid-base * 3;
+            padding-top: $grid-base * 3;
+            text-align: right;
+        }
+    }
+}

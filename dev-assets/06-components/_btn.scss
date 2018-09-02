@@ -1,0 +1,17 @@
+.c-btn {
+    border: 2px solid $black;
+    border-radius: none;
+    display: inline-block;
+    font-size: $font-size-5;
+    font-weight: 700;
+    line-height: $line-height-base;
+    padding: 1.25rem 2.5rem;
+    text-transform: uppercase;
+    transition: all .25s ease-in-out;
+
+    
+    &:hover {
+        color: $greyDark;
+        text-decoration: none; 
+    }
+} 

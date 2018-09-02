@@ -1,0 +1,28 @@
+.t-info {
+    max-width: 1680px;
+    margin: 0 auto;
+    padding: $grid-base * 5;
+
+    @include medium-up {
+        padding: $grid-base * 10;
+    }
+
+    @include large-up {
+        padding: $grid-base * 22 $grid-base * 45.5;
+    }
+
+    &__content {
+        font-size: $font-size-4;
+        color: $greyDark;
+        font-weight: 300;
+        line-height: $line-height-sm;
+
+        @include medium-up {
+            font-size: $font-size-3;
+        }
+
+        @include large-up {
+            font-size: $font-size-2;
+        }
+    }
+}
